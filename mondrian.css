@@ -1,0 +1,265 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: flex;
+}
+
+.wide-col {
+	width: 65%;
+	height: 100%;
+	background-color: #E6B264;
+	display: flex;
+}
+
+.narrow-col {
+	width: 35%;
+	height: 100%;	
+	display: block;
+}
+
+.box {
+	background-color: #E67A64;
+	height: 50%;
+	width: 100%;
+}	
+
+.colorbox {
+	background-color: #D564C5;
+}
+
+.centervert {
+	justify-content: center;
+}
+
+.centerhori {
+	align-items: center;
+}
+
+.border {
+  border-style: solid;
+  border-width: .25px;
+}
+
+.img {
+	max-height: 50%;
+	max-width: 50%;
+}
+
+.img2 {
+	max-height: 50%;
+	max-width: 50%;
+}
+
+.img3 {
+	max-height: 50%;
+	max-width: 50%;
+}
+
+
+
+
+/* start of responsive page
+.box2 {
+	background-color: silver;
+	height: 50%;
+	width: 100%;
+}	
+*/
+
+
+
+
+
+
+
+@media only screen and (max-width: 1400px) {
+	body {
+		display: block;
+	}
+	.wide-col {
+		display: flex;
+		width: 100%;
+		height: 65%;
+		background-color: #BA51FF;
+	}
+	.narrow-col {
+		display: flex;
+		width: 100%;
+		height: 35%;
+	}
+	.box {
+		height: 100%;
+		background-color: #F1AC36;
+	}
+	.colorbox {
+		height: 100%;
+		background-color: #30AD87;
+	}
+	.img {content: url("images/fish.jpg");
+	}
+	.img2 {content: url("images/fish1.jpg");
+	}
+	.img3 {content: url("images/fish2.jpg");
+	}
+
+}
+
+
+
+
+
+
+
+
+/* scond set of responsive layout*/
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+	body {
+		display: block;
+		background-color: #777FE8;
+		height: 100%;
+	}
+	.wide-col {
+		display: flex;
+		height: calc(100%/2);
+		width: calc(100%/2);
+		background-color: #4BFF45;
+	}
+	.narrow-col {
+		display: block;
+		width: calc(100%/2);
+		height: calc(100%/2);
+	}
+	.box {
+		height: 100%;
+		width: 100%;
+		background-color: #F3FF45;
+	}
+	.colorbox {
+		height: 100%;
+		width: 100%;
+		background-color: #F881DC;
+	}
+	.img {content: url("images/snail.jpg");
+	}
+	.img2 {content: url("images/snail1.jpg");
+	}
+	.img3 {content: url("images/snail2.jpg");
+	}
+}
+
+
+
+
+
+
+/* third set of reponsive page
+.img2 {content: url("images/bird.jpg");}
+*/
+
+
+
+
+@media only screen and (max-width: 1000px) {
+	body {
+		display: flex;
+		background-color: #FFCB72;
+	}
+	.wide-col {
+		display: flex;
+		height: 50%;
+		width: 100%;
+		background-color: #FF7272;
+	}
+	.narrow-col {
+		display: block;
+		width: 100%;
+		height: 50%;
+	}
+	.box {
+		height: 100%;
+		width: 100%;
+		background-color: #D972FF;
+	}
+	.colorbox {
+		height: 100%;
+		width: 100%;
+		background-color: #80FF72;
+	}
+}
+
+
+
+
+
+
+/* fourth set of page */
+
+
+
+
+@media only screen and (max-width: 800px) {
+	body {
+		display: block;
+		background-color: #8DFFBB;
+	}
+	.wide-col {
+		display: flex;
+		height: 50%;
+		width: 100%;
+		background-color: #98E664;
+	}
+	.narrow-col {
+		display: flex;
+		width: 100%;
+		height: 50%;
+	}
+	.box {
+		height: 100%;
+		width: 100%;
+		background-color: #D9E664;
+	}
+	.colorbox {
+		height: 100%;
+		width: 100%;
+		background-color: #3A9BA6;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/ */
+/* Keep your image from overflowing it's parent DIV */
+/*
+.center-horizontal {
+	align-items: center;
+}
+
+
+.centervert {
+	justify-content: center;
+}
+
+.contain-image {
+	max-height: 75%;
+	max-width: 75%
+}
+
+}
+}
+}*/
